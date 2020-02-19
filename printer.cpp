@@ -11,6 +11,7 @@ void printer::print()
             //m_cond_var.wait(lock);
             
         //}
+        
         sample_memory();
 
     } //end while
@@ -31,7 +32,8 @@ void printer::sample_memory()
             printf("%c ", list[j]);
 
         }
-            printf("\n"); 
+        printf("\n"); 
+        //my_memory->swap_first_two();
     } //end if 
 }
 
@@ -45,7 +47,7 @@ void printer::set_print_value(int j)
     m_cond_var.notify_one();
 }
 
-void printer::set_memorizer_callback(memorizer* m)
+void printer::set_memorizer_reference(memorizer* m)
 {
   my_memory = m;
 }

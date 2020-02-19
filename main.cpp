@@ -10,8 +10,8 @@ int main()
   generator g;
   memorizer m;
   g.set_printer_callback(&p);
-  g.set_memorizer_callback(&m);
-  p.set_memorizer_callback(&m);
+  g.set_memorizer_reference(&m);
+  p.set_memorizer_reference(&m);
 
 
   std::thread t1(&printer::print, &p);

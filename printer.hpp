@@ -20,7 +20,7 @@ class printer
     void print();
     void set_print_value(int j);
     void sample_memory();
-    void set_memorizer_callback(memorizer* m);
+    void set_memorizer_reference(memorizer* m);
 
     private:
 

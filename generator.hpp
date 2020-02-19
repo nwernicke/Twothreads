@@ -12,7 +12,7 @@ class generator
 
         void generate();
         void set_printer_callback(printer* p);
-        void set_memorizer_callback(memorizer* m);
+        void set_memorizer_reference(memorizer* m);
 
     private:
 

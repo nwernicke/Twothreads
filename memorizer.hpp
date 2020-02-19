@@ -29,9 +29,14 @@ class memorizer
         ~memorizer()
         {}
 
-        void add_new_character(char new_data);
+        void append_new_character(char new_data);
+        void swap_nodes(node* a, node* b);
+        node* find_lowest();
+        void selection_sort();
+        void swap_first_two();
+        void debug_show_memory();
         int get_last(char* list, int length);
-
+        int check_node(node* n);
 
     private:
         mutable std::mutex m_mutex;
